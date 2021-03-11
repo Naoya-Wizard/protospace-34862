@@ -13,8 +13,8 @@
 
 ### Association
 
-- belongs_to :prototypes
-- belongs_to :comments
+- has_many :prototypes
+- has_many :comments
 
 
 
@@ -29,8 +29,8 @@
 
 ### Association
 
-- has_many :users
-- belongs_to :comments
+- belongs_to :user
+- has_many :comments
 
 
 
@@ -44,5 +44,5 @@
 
 ### Association
 
-- has_many :users
-- has_many :prototype
+- belongs_to :user
+- belongs_to :prototype
